@@ -1,0 +1,56 @@
+.main{
+    margin-top : 20px;
+    background-color: beige;
+    padding : 20px;
+    text-align: center;
+    align-content: center;
+    border : solid;
+    border-color: brown;
+    border-radius: 10px;
+}
+input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 25px;
+    width : 200px;
+    padding:10px;
+}
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s1{
+    background-color: black;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    padding: 10px;
+    width : 100px;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+form{
+    border: solid;
+    padding : 20px;
+    width : 400px;
+    margin-left : 350px;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-radius: 5px;
+}
+.a{
+    background-color: rgb(150, 225, 246);
+    padding : 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border: solid;
+    border-color: brown;
+    border-radius: 10px;
+}
+.xx{
+    margin-top : 40px;
+    height : 35px;
+    width : 100px;
+}

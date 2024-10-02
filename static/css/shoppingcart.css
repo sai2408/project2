@@ -1,0 +1,83 @@
+.a{
+    background-color: aqua;
+    padding : 20px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.b{
+    background-color: rgb(202, 242, 202);
+    margin-top : 20px;
+    border-radius: 10px;
+    padding : 20px;
+    text-align: center;
+    align-content: center;
+}
+table{
+    position: relative;
+    left : 25%;
+    margin-top:10px;
+    text-align: center;
+    align-content: center;
+    border: solid;
+    width : 50%;
+    padding : 20px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: blue;
+}
+
+.b1{
+    border: solid;
+    background-color: rgb(221, 197, 243);
+}
+tr{
+    background-color: azure;
+}
+td{
+    padding: 5px;
+}
+th{
+    padding : 5px;
+}
+.c{
+    margin: 30px;
+    background-color: blue;
+    width  : 350px;
+    text-align : center;
+    align-content : center;
+    padding : 10px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    position: relative;
+    left : 380px;
+}
+.d button{
+    border: solid;
+    border-color: brown;
+    background-color: blue;
+    padding : 10px;
+    color : whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.d button:hover{
+    border: solid;
+    border-color: brown;
+    background-color: white;
+    padding : 10px;
+    color : blue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.x1{
+    background-color: aquamarine;
+    text-align: center;
+    align-content : center
+}

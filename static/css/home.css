@@ -1,0 +1,66 @@
+.a{
+    background-color: aqua;
+    padding : 10px;
+    display : grid;
+    grid-template-columns: 120px 120px 120px 120px auto;
+
+}
+.a div{
+    background-color: bisque;
+    margin : 5px;
+    padding : 5px;
+    text-align: center;
+    width : 100px;
+    border-radius: 5px;
+}
+.a div:hover{
+    background-color: black;
+    color: white;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+.b{
+    background-color: rgb(237, 128, 128);
+    padding : 10px;
+    width : 250px;
+    display : grid;
+    grid-template-columns: 120px 120px 120px 120px ;
+    position: absolute;
+    top : 8px;
+    right : 9px;
+}
+.b div{
+    background-color: white;
+    margin : 5px;
+    padding : 5px;
+    text-align: center;
+    width : 100px;
+    border-radius: 5px;
+}
+img{
+    height : 100%;
+    width : 100%;
+}
+.c{
+    display: grid;
+    margin-top : 15px;
+    padding : 20px;
+    margin-bottom : 20px;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(194, 232, 233);
+}
+.c div{
+    height : 300px;
+    width : 300px;
+    padding : 10px;
+    background-color: rgb(229, 148, 229);
+    border: solid;
+    border-color: blue;
+    margin-bottom : 20px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}

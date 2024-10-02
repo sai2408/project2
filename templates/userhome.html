@@ -1,0 +1,261 @@
+<html></html>
+    <head>
+        <title>Home</title>
+        <!-- <link rel="stylesheet" href="userhome.css"> -->
+        <link rel="stylesheet" href="{{url_for('static',filename='css/userhome.css')}}">
+    </head>
+    <body>
+        <div class="a">
+            <h1>User Home Page</h1>
+            <p>Welcome {{name}} [{{mail}}]</p>
+            <div class="a1">
+                <a href="{{'home'}}">Home</a>
+            </div>
+            <div class="a2">
+                <form action="{{'shoppingcart'}}" method = "POST">
+                    <input type="text" name="mail" value = {{mail}} hidden>
+                    <input class="x1" type="Submit" value="shopping cart">
+                </form>
+            </div>
+        </div>
+        <div class="b">
+            <details open>
+                <summary>ALL</summary>
+                <div class="b1">
+                    <img src="{{url_for('static',filename='images/e1.png')}}">
+                    <img src="{{url_for('static',filename='images/e2.png')}}">
+                    <img src="{{url_for('static',filename='images/e3.png')}}">
+                    <img src="{{url_for('static',filename='images/e4.png')}}">
+                    <img src="{{url_for('static',filename='images/t1.png')}}">
+                    <img src="{{url_for('static',filename='images/t2.png')}}">
+                    <img src="{{url_for('static',filename='images/t3.png')}}">
+                    <img src="{{url_for('static',filename='images/t4.png')}}">
+                    <img src="{{url_for('static',filename='images/f1.png')}}">
+                    <img src="{{url_for('static',filename='images/f2.png')}}">
+                    <img src="{{url_for('static',filename='images/f3.png')}}">
+                    <img src="{{url_for('static',filename='images/f4.png')}}">
+                    <img src="{{url_for('static',filename='images/g1.png')}}">
+                    <img src="{{url_for('static',filename='images/g2.png')}}">
+                    <img src="{{url_for('static',filename='images/g3.png')}}">
+                    <img src="{{url_for('static',filename='images/g4.png')}}">
+                </div>
+            </details>
+        </div>
+        <div class="b">
+            <details>
+                <summary>Electronics</summary>
+                <div class="b2">
+                    <div>
+                        <img src="{{url_for('static',filename='images/e1.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Earbuds</h2>
+                            <h2><span>Price: </span>3000</h2>
+                        </div>
+                        <form action="{{'storecart'}}" method="POST">
+                            <input type="text" name="cart" value="101,EARBUDS,3000,{{name}},{{mail}}" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                        <form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,EARBUDS,abc,3000,1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+                        <br>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/e2.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Neck Band</h2>
+                            <h2><span>Price: </span>1500</h2>
+                        </div>
+                        <form action="{{'storecart'}}" method="POST">
+                            <input type="text" name="cart" value="102,Neck Band,1500,{{name}},{{mail}}" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                        <form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="102,Neck Band,abc,1500,1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+                        <br>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/e3.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Samsung Mobile</h2>
+                            <h2><span>Price: </span>30000</h2>
+                        </div>
+                        <form action="{{'storecart'}}" method="POST">
+                            <input type="text" name="cart" value="103,samsung Mobile,30000,{{name}},{{mail}}" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                        <form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="103,Samsung Mobile,abc,30000,1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/e4.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Iphone</h2>
+                            <h2><span>Price: </span>80000</h2>
+                        </div>
+                        <form action="{{'storecart'}}" method="POST">
+                            <input type="text" name="cart" value="104,Iphone,80000,{{name}},{{mail}}" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                        <form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="104,Iphone,abc,80000,1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+                    </div>
+                </div>
+            </details>
+            <details>
+                <summary>Toys</summary>
+                <div class="b2">
+                    <div>
+                        <img src="{{url_for('static',filename='images/t1.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Tri Cycle</h2>
+                            <h2><span>Price: </span>3000</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="201,TRI CYCLE,3000" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/t2.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Crawler</h2>
+                            <h2><span>Price: </span>4000</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="202,CRAWLER,4000" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/t3.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Drawing Pad</h2>
+                            <h2><span>Price: </span>2500</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="203,DRAWING PAD,2500" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/t4.png')}}">
+                        <form action="#" method="POST">
+                            <div class="b3">
+                                <h2><span>Name: </span>Remote car</h2>
+                                <h2><span>Price: </span>3500</h2>
+                            </div>
+                            <input type="text" name="cart" value="204,REMOTE CAR,3500" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                </div>
+            </details>
+            <details>
+                <summary>Fashion</summary>
+                <div class="b2">
+                    <div>
+                        <img src="{{url_for('static',filename='images/f1.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Boys shirt</h2>
+                            <h2><span>Price: </span>3000</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="301,BOYS SHIRT,3000" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/f2.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Girls Dress</h2>
+                            <h2><span>Price: </span>6000</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="302,GIRLS DRESS,6000" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/f3.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Mens Shirt</h2>
+                            <h2><span>Price: </span>2500</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="303,MENS SHIRT,2500" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/f4.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Saree</h2>
+                            <h2><span>Price: </span>4500</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="304,SAREE,4500" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                </div>
+            </details>
+            <details>
+                <summary>Groceries</summary>
+                <div class="b2">
+                    <div>
+                        <img src="{{url_for('static',filename='images/g1.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Badham</h2>
+                            <h2><span>Price: </span>500</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="401,BADHAM,500" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/g2.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Cashew</h2>
+                            <h2><span>Price: </span>600</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="402,CASHEW,600" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/g3.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Choco Chips</h2>
+                            <h2><span>Price: </span>150</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="403,CHOCO CHIPS,150" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static',filename='images/g4.png')}}">
+                        <div class="b3">
+                            <h2><span>Name: </span>Green Tea</h2>
+                            <h2><span>Price: </span>300</h2>
+                        </div>
+                        <form action="#" method="POST">
+                            <input type="text" name="cart" value="404,GREEN TEA,300" hidden>
+                            <input class="atc" type="submit" value="Add to cart">
+                        </form>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </body>
+</html>

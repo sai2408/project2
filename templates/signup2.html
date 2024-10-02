@@ -1,0 +1,43 @@
+<html></html>
+    <head>
+        <title>Register Page</title>
+        <!-- <link rel="stylesheet" href="signup2.css"> -->
+        <link rel="stylesheet" href="{{url_for('static',filename='css/signup2.css')}}">
+    </head>
+    <body>
+        <div class="a">
+            <h1>Sign up Page</h1>
+            <p>Enter OTP sent to mail ({{vmail}})</p>
+        </div>
+        <div class="main">
+            <form action="{{'verifyotp'}}" method="POST">
+                <label for="fname">
+                    First Name: 
+                </label>
+                <input type="text" id="fname" name="fname" value="{{fname}}">
+                <br>
+                <label for="lname">
+                    Last Name: 
+                </label>
+                <input type="text" id="lname" name="lname" value="{{lname}}">
+                <br>
+                <label for="email">
+                    Email id:  
+                </label>
+                <input type="text" id="email" name="mail" value="{{email}}">
+                <br>
+                <label for="mobile">
+                    Mobile Number:  
+                </label>
+                <input type="text" id="mobile" name="mobile" value="{{mobile}}">
+                <br>
+                <label for="otp">
+                    Enter OTP:  
+                </label>
+                <input class="xx" type="text" id="otp" name="otp" >
+                <br>
+                <input class="s1" type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
