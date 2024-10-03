@@ -9,27 +9,28 @@ import os
 RAZORPAY_KEY_ID = 'rzp_test_NlIGIFpas2ADNs'
 RAZORPAY_KEY_SECRET = 'HYPm7RZ9X5Al5S6DpJvHDBsc'
 client = razorpay.Client(auth=(RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET))
-verifyotp = "0"
-user = os.environ.get('RDS_USERNAME')
-db = os.environ.get('RDS_DB_NAME')
-password = os.environ.get('RDS_PASSWORD')
-host = os.environ.get('RDS_HOSTNAME')
-port = int(os.environ.get('RDS_PORT'))
+user=os.environ.get('RDS_USERNAME')
+db=os.environ.get('RDS_DB_NAME')
+password=os.environ.get('RDS_PASSWORD')
+host=os.environ.get('RDS_HOSTNAME')
+port=int(os.environ.get('RDS_PORT'))
 with pymysql.connect(host=host,password=password,db=db,user=user,port=port) as conn:
-    cursor = conn.cursor()
-    cursor.execute("CREATE TABLE if not exists users (FNAME varchar(50) DEFAULT NULL, LNAME varchar(50) DEFAULT NULL, EMAIL varchar(60) NOT NULL, MOBILE varchar(15) DEFAULT NULL, PRIMARY KEY (EMAIL)")
-    cursor.execute("CREATE TABLE if not exists enquiry (FNAME varchar(30) DEFAULT NULL, LNAME varchar(30) DEFAULT NULL, EMAIL varchar(50) DEFAULT NULL)")
-    cursor.execute("CREATE TABLE if not exists cart (PID varchar(10) DEFAULT NULL, PNAME varchar(30) DEFAULT NULL, EMAIL varchar(100) DEFAULT NULL, PPRICE varchar(30) DEFAULT NULL, QTY varchar(100) DEFAULT NULL)")
-# db_config = {
-#     'host' : 'localhost',
-#     'database' : 'projectflask',
-#     'user' : 'root',
-#     'password' : 'root'
-# }
-
+    cursor=conn.cursor()
+    cursor.execute("CREATE TABLE if not exists enquiry ( FNAME varchar(30) DEFAULT NULL, LNAME varchar(30) DEFAULT NULL, EMAIL varchar(50) DEFAULT NULL) ")
+    cursor.execute("CREATE TABLE if not exists users ( FNAME varchar(50) DEFAULT NULL, LNAME varchar(50) DEFAULT NULL, EMAIL varchar(60) NOT NULL, MOBILE varchar(15) DEFAULT NULL, PRIMARY KEY (EMAIL)) ")
+    cursor.execute("CREATE TABLE if not exists cart ( PID varchar(10) DEFAULT NULL, PNAME varchar(30) DEFAULT NULL, EMAIL varchar(100) DEFAULT NULL, PPRICE varchar(30) DEFAULT NULL, QTY varchar(100) DEFAULT NULL) ")
+verifyotp = "0"
+'''
+db_config = {
+    'host' : 'localhost',
+    'database' : 'projectflask',
+    'user' : 'root',
+    'password' : 'root'
+}
+'''
 db_config = {
     'host' : host,
-    'user':user,
+    'user' : user,
     'password' : password,
     'db' : db,
     'port' : int(port)
