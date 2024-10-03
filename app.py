@@ -17,9 +17,9 @@ host = os.environ.get('RDS_HOSTNAME')
 port = int(os.environ.get('RDS_PORT'))
 with pymysql.connect(host=host,password=password,db=db,user=user,port=port) as conn:
     cursor = conn.cursor()
-    cursor.execute("CREATE TABLE if not exists users ( FNAME varchar(50) DEFAULT NULL, LNAME varchar(50) DEFAULT NULL, EMAIL varchar(60) NOT NULL, MOBILE varchar(15) DEFAULT NULL, PRIMARY KEY (EMAIL) ")
-    cursor.execute("CREATE TABLE if not exists enquiry ( FNAME varchar(30) DEFAULT NULL, LNAME varchar(30) DEFAULT NULL, EMAIL varchar(50) DEFAULT NULL )")
-    cursor.execute("CREATE TABLE cart ( PID varchar(10) DEFAULT NULL, PNAME varchar(30) DEFAULT NULL, EMAIL varchar(100) DEFAULT NULL, PPRICE varchar(30) DEFAULT NULL, QTY varchar(100) DEFAULT NULL )")
+    cursor.execute("CREATE TABLE if not exists users (FNAME varchar(50) DEFAULT NULL, LNAME varchar(50) DEFAULT NULL, EMAIL varchar(60) NOT NULL, MOBILE varchar(15) DEFAULT NULL, PRIMARY KEY (EMAIL)")
+    cursor.execute("CREATE TABLE if not exists enquiry (FNAME varchar(30) DEFAULT NULL, LNAME varchar(30) DEFAULT NULL, EMAIL varchar(50) DEFAULT NULL)")
+    cursor.execute("CREATE TABLE if not exists cart (PID varchar(10) DEFAULT NULL, PNAME varchar(30) DEFAULT NULL, EMAIL varchar(100) DEFAULT NULL, PPRICE varchar(30) DEFAULT NULL, QTY varchar(100) DEFAULT NULL)")
 # db_config = {
 #     'host' : 'localhost',
 #     'database' : 'projectflask',
